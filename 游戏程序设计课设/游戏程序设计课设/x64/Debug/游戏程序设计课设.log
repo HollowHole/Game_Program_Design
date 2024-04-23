@@ -1,0 +1,36 @@
+﻿  FlyGame.cpp
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(1,9): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(219,119): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(219,69): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(221,128): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(221,78): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(241,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(246,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(292,24): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(567,27): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(567,22): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(569,34): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(579,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(645,35): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(645,30): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(660,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(660,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(663,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(663,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(671,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(671,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(674,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(674,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(689,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(689,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(692,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(692,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(698,71): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\陈医生\Desktop\彭洋_306647\飞行棋\源代码\FlyGame.cpp(698,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  源.cpp
+  DebugDraw.cpp
+  RenderGL3.cpp
+  正在生成代码...
+glew.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+Box2D.lib(b2Draw.obj) : warning LNK4099: 未找到 PDB“”(使用“Box2D.lib(b2Draw.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  游戏程序设计课设.vcxproj -> D:\Mine\C\vs项目\游戏程序设计课设\x64\Debug\游戏程序设计课设.exe
