@@ -1,3 +1,1 @@
-﻿glew.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-Box2D.lib(b2Draw.obj) : warning LNK4099: 未找到 PDB“”(使用“Box2D.lib(b2Draw.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-  游戏程序设计课设.vcxproj -> D:\Mine\Files\GitHub\Game_Program_Design\游戏程序设计课设\x64\Debug\游戏程序设计课设.exe
+﻿  游戏程序设计课设.vcxproj -> D:\Mine\Files\GitHub\Game_Program_Design\游戏程序设计课设\x64\Debug\游戏程序设计课设.exe
