@@ -94,11 +94,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Mine\path\SFML-2.6.0\include;D:\Mine\C\vs项目\Red Ball\Red Ball</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\path\SFML-2.6.0\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\Mine\path\SFML-2.6.0\lib;D:\Mine\path\SFML-2.6.0\bin;D:\Mine\C\vs项目\Red Ball\Red Ball\lib64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\path\SFML-2.6.0\lib;.\path\SFML-2.6.0\bin;.\path\lib64</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;glu32.lib;opengl32.lib;winmm.lib;glew.lib;Box2D.lib</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
