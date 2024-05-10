@@ -112,5 +112,10 @@ public:
 	void DrawPlay();
 	void Run();
 
+	bool TouziPosClicked();
+	int AiDoChoice();
+	bool IsPlayerTurn();
 
 };
+
+

@@ -223,9 +223,14 @@ void Game::QiziBuxing()
 }
 
 void Game::Input()
-{
+{	
+	if (!IsPlayerTurn())
+	{
+		goto AITURNGOTO;
+	}
 	while (window.pollEvent(event))
 	{
+		AITURNGOTO:
 		if (event.type == Event::Closed) {
 			window.close();
 			gameQuit = true;
@@ -297,34 +302,39 @@ void Game::Input()
 
 		if (GamePlay == true)//游戏界面输入模块
 		{
-			if (touziTime == true)//骰子时间
+			if (touziTime == true && touziInitial == false)//骰子时间
 			{
-				if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)//左键单击骰子位置
+				if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left && TouziPosClicked() || !IsPlayerTurn())//左键单击骰子位置 
 				{
-					if (sf::Mouse::getPosition(window).x > 500 && sf::Mouse::getPosition(window).x < 580
-						&& sf::Mouse::getPosition(window).y >320 && sf::Mouse::getPosition(window).y < 380)
-					{
-						touzi();//进行骰子数值初始化及动画
-						soundtouzi.setVolume(40);
-						soundtouzi.play();
-						//cout << "chg" << endl;
-
-					}
+					touzi();//进行骰子数值初始化及动画
+					soundtouzi.setVolume(40);
+					soundtouzi.play();
+					//cout << "chg" << endl;
 				}
 			}
 			if (touziTime == false)//不为骰子时间，可选择棋子进行步行
 			{
+				int AiChoice;
+				if (!IsPlayerTurn()) {
+					AiChoice = AiDoChoice();
+				}
 				for (int i = 0; i < 4; i++)//本环节四个棋子可选择
 				{
+					//如果是AI的回合，判断AI的选择是否是该棋子，不是的话continue;
+					if (!IsPlayerTurn() && AiChoice != i) {
+						continue;
+					}
 
-					if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)//左键单击
+					if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left || !IsPlayerTurn())//左键单击 
 					{
-						if (QiziA[PlayerNum][i].isHome == true && QiziA[PlayerNum][i].isend == false && touziNum == 5)//在家且该棋子未结束且骰子数为6
+						//在家且该棋子未结束且骰子数为6
+						if (QiziA[PlayerNum][i].isHome == true && QiziA[PlayerNum][i].isend == false && touziNum == 5)
 						{
 							if (sf::Mouse::getPosition(window).x > QiziHomePos1[PlayerNum][i][0] - 20 + 20 //点击在家位置
 								&& sf::Mouse::getPosition(window).x < QiziHomePos1[PlayerNum][i][0] + 20 + 20
 								&& sf::Mouse::getPosition(window).y > QiziHomePos1[PlayerNum][i][1] - 20 + 20
-								&& sf::Mouse::getPosition(window).y < QiziHomePos1[PlayerNum][i][1] + 20 + 20)
+								&& sf::Mouse::getPosition(window).y < QiziHomePos1[PlayerNum][i][1] + 20 + 20
+								|| !IsPlayerTurn())
 							{
 
 								QiziA[PlayerNum][i].isHome = false;//在家状态变为不在
@@ -336,12 +346,14 @@ void Game::Input()
 						}
 						else
 						{
-							if (QiziA[PlayerNum][i].isDoor == true && QiziDianjiLock == false)//棋子在家门口
+							//棋子在家门口
+							if (QiziA[PlayerNum][i].isDoor == true && QiziDianjiLock == false)
 							{
 								if (sf::Mouse::getPosition(window).x > DPosition[QiziA[PlayerNum][i].prex][0] + QiziA[PlayerNum][i].prex2[0] - 20 + 20 //棋子在家门口位置
 									&& sf::Mouse::getPosition(window).x < DPosition[QiziA[PlayerNum][i].prex][0] + QiziA[PlayerNum][i].prex2[0] + 20 + 20//(即家门第一格加偏移量)
 									&& sf::Mouse::getPosition(window).y > DPosition[QiziA[PlayerNum][i].prex][1] + QiziA[PlayerNum][i].prex2[1] - 20 + 20
-									&& sf::Mouse::getPosition(window).y < DPosition[QiziA[PlayerNum][i].prex][1] + QiziA[PlayerNum][i].prex2[1] + 20 + 20)
+									&& sf::Mouse::getPosition(window).y < DPosition[QiziA[PlayerNum][i].prex][1] + QiziA[PlayerNum][i].prex2[1] + 20 + 20
+									||!IsPlayerTurn())
 
 								{
 									//qiziDianji = i;
@@ -393,12 +405,14 @@ void Game::Input()
 									qiziBuxingTime = true;//进入步行时间
 								}
 							}
-							else//正常路上棋子，不在家也不在门口（许多解析可根据上方门口的输出逻辑，大部分一样）
+							//正常路上棋子，不在家也不在门口（许多解析可根据上方门口的输出逻辑，大部分一样）
+							else
 							{
 								if (sf::Mouse::getPosition(window).x > DPosition[QiziA[PlayerNum][i].GePos][0] - 20 + 20//以棋子为中心上下左右分别20为点击有效范围
 									&& sf::Mouse::getPosition(window).x < DPosition[QiziA[PlayerNum][i].GePos][0] + 20 + 20
 									&& sf::Mouse::getPosition(window).y > DPosition[QiziA[PlayerNum][i].GePos][1] - 20 + 20
-									&& sf::Mouse::getPosition(window).y < DPosition[QiziA[PlayerNum][i].GePos][1] + 20 + 20)
+									&& sf::Mouse::getPosition(window).y < DPosition[QiziA[PlayerNum][i].GePos][1] + 20 + 20
+									||!IsPlayerTurn())
 								{
 									touzinumPrex = 0;
 									int n = i;
@@ -579,7 +593,6 @@ void Game::touzi()//初始化骰子数
 	srand(time(NULL));
 	touziNuml = touziNum;
 	touziNum = rand() % 6;
-
 	TouziFlash_n = 0;
 	TouziFlash[0] = touziNuml;
 	TouziFlash[19] = touziNum;
@@ -714,4 +727,31 @@ void Game::Run()
 			Draw();
 		}
 	} while (!gameQuit);
+}
+
+bool Game::TouziPosClicked() {
+	return (sf::Mouse::getPosition(window).x > 500 && sf::Mouse::getPosition(window).x < 580
+		&& sf::Mouse::getPosition(window).y >320 && sf::Mouse::getPosition(window).y < 380);
+	
+}
+bool Game::IsPlayerTurn() {
+	if (PlayerNum == 0)
+		return true;
+	else
+		return false;
+}
+int Game::AiDoChoice() {
+	if (touziNum == 5) {
+		for (int i = 0; i < 4; i++) {
+			if (!QiziA[PlayerNum][i].isend)
+				return i;
+		}
+	}
+	for (int i = 0; i < 4; i++) {
+		if (!QiziA[PlayerNum][i].isend && !QiziA[PlayerNum][i].isHome)
+			return i;
+	}
+
+	return -1;
+
 }
