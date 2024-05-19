@@ -20,6 +20,7 @@ public:
 	int prex2[2];//家门偏移
 	int diezishu;//迭子数
 	bool isend;//是否结束
+	int type;
 };
 
 class Game
@@ -51,7 +52,7 @@ public:
 	//棋子部分定义
 	int qizibuxingCount, diezi, qiziDianji;
 	bool QiziDianjiLock, qiziBuxingTime;
-
+	int jump;
 
 	//骰子部分定义
 	int touziNuml, touziNum, touziHomeNum, touzinumPrex;
@@ -91,10 +92,10 @@ public:
 	};
 
 	//棋子定义
-	Qizi QiziA[4][4] = { {{84,true,false,51,{0, -50 },0,false},{84,true,false,51,{0,-50},0 ,false}, {84,true,false,51,{0,-50},0,false },{84,true,false,51,{0,-50},0 ,false}, },
-						 {{84,true,false,9,{50,0} ,0,false},{84,true,false,9,{50,0},0,false }, {84,true,false,9,{50,0},0 ,false},{84,true,false,9,{50,0},0 ,false}},
-						 {{84,true,false,23,{0,50} ,0,false},{84,true,false,23,{0,50},0 ,false}, {84,true ,false,23,{0,50},0,false},{84,true,false,23 ,{0,50},0,false}},
-						 { {84, true,false,37,{-50,0},0 ,false}, { 84,true,false,37,{-50,0},0 ,false}, { 84,true,false,37,{-50,0} ,0,false}, { 84,true,false,37,{-50,0},0,false }, } };//棋子
+	Qizi QiziA[4][4] = { {{84,true,false,51,{0, -50 },0,false,1},{84,true,false,51,{0,-50},0 ,false,2}, {84,true,false,51,{0,-50},0,false,3},{84,true,false,51,{0,-50},0 ,false,4}, },
+						 {{84,true,false,9,{50,0} ,0,false,1},{84,true,false,9,{50,0},0,false,2 }, {84,true,false,9,{50,0},0 ,false,3},{84,true,false,9,{50,0},0 ,false,4}},
+						 {{84,true,false,23,{0,50} ,0,false,1},{84,true,false,23,{0,50},0 ,false,2}, {84,true ,false,23,{0,50},0,false,3},{84,true,false,23 ,{0,50},0,false,4}},
+						 { {84, true,false,37,{-50,0},0 ,false,1}, { 84,true,false,37,{-50,0},0 ,false,2}, { 84,true,false,37,{-50,0} ,0,false,3}, { 84,true,false,37,{-50,0},0,false,4 }, } };//棋子
 
 	//棋子家位置
 	double QiziHomePos1[4][4][2] = { {{290,90},{335,90},{290,135},{335,135}},
