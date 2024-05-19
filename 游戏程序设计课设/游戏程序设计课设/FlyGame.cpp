@@ -189,11 +189,34 @@ void Game::QiziBuxing()
 					for (int m = 0; m < 4; m++)
 						for (int n = 0; n < 4; n++)
 						{
-							if (QiziA[m][n].GePos == QiziA[PlayerNum][qiziDianji].GePos && m != PlayerNum && QiziA[m][n].isDoor == false)
+							if (QiziA[m][n].GePos == QiziA[PlayerNum][qiziDianji].GePos && m != PlayerNum && QiziA[m][n].isDoor == false&&qizibuxingCount==touziNum+1)
 							{
-								QiziA[m][n].isHome = true;
-								soundzhuang.setVolume(60);
-								soundzhuang.play();
+								if ((QiziA[m][n].type == 2 || QiziA[PlayerNum][qiziDianji].type == 2) && QiziA[PlayerNum][qiziDianji].type != 1)
+								{
+									QiziA[m][n].isHome = true;
+									QiziA[PlayerNum][qiziDianji].isHome = true;
+									soundzhuang.setVolume(60);
+									soundzhuang.play();
+								}
+								else if (QiziA[m][n].type == 2 && QiziA[PlayerNum][qiziDianji].type == 1)
+								{
+									QiziA[m][n].isHome = true;
+									soundzhuang.setVolume(60);
+									soundzhuang.play();
+								}
+								else
+								{
+									if (QiziA[m][n].type <= QiziA[PlayerNum][qiziDianji].type)
+									{
+										QiziA[m][n].isHome = true;
+										soundzhuang.setVolume(60);
+										soundzhuang.play();
+									}
+									else
+									{
+										QiziA[PlayerNum][qiziDianji].GePos -= 1;
+									}
+								}
 							}
 						}
 				}
