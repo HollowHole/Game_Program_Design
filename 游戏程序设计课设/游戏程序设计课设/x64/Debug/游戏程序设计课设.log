@@ -1,32 +1,30 @@
 ﻿  FlyGame.cpp
 E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(1,9): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(242,119): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(242,69): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(244,128): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(244,78): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(269,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(274,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(320,24): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(604,27): warning C4305: “参数”: 从“double”到“float”截断
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(604,22): warning C4305: “参数”: 从“double”到“float”截断
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(606,34): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(616,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(681,35): warning C4305: “参数”: 从“double”到“float”截断
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(681,30): warning C4305: “参数”: 从“double”到“float”截断
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(696,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(696,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(699,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(699,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(707,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(707,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(710,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(710,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(725,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(725,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(728,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(728,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(734,71): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(734,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-  Main.cpp
-  正在生成代码...
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(252,119): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(252,69): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(254,128): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(254,78): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(279,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(284,22): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(330,24): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(615,27): warning C4305: “参数”: 从“double”到“float”截断
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(615,22): warning C4305: “参数”: 从“double”到“float”截断
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(617,34): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(627,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(692,35): warning C4305: “参数”: 从“double”到“float”截断
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(692,30): warning C4305: “参数”: 从“double”到“float”截断
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(707,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(707,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(710,70): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(710,47): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(718,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(718,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(721,113): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(721,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(736,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(736,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(739,91): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(739,58): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(745,71): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\游戏程序设计课设\FlyGame.cpp(745,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   游戏程序设计课设.vcxproj -> E:\gamevs\xxx\Game_Program_Design\游戏程序设计课设\x64\Debug\游戏程序设计课设.exe

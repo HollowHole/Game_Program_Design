@@ -52,7 +52,7 @@ public:
 	//棋子部分定义
 	int qizibuxingCount, diezi, qiziDianji;
 	bool QiziDianjiLock, qiziBuxingTime;
-
+	int jump;
 
 	//骰子部分定义
 	int touziNuml, touziNum, touziHomeNum, touzinumPrex;
